@@ -5,8 +5,15 @@ import { MessageService } from './services/message.service';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  providers:[MessageService]
 })
 export class AppComponent {
+
+  getMessage:string[]=[]
+  constructor(private messageService:MessageService){
+    this.getMessage = messageService.getMessage();
+    console.log(this.getMessage);
+  }
   title = 'barique';
 
   isLogin:boolean=false;

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { MessageService } from './services/message.service';
+
 
 
 @NgModule({
@@ -13,7 +13,6 @@ import { MessageService } from './services/message.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MessageService
   ],
   providers: [],
   bootstrap: [AppComponent]
